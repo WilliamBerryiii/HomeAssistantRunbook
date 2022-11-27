@@ -27,10 +27,30 @@ The physical and logical design of this Home Assistant installation is bound by 
 
 ## Hardware 
 
-One of the main features of our smart home is that all smart lighting fixtures have a smart switch upstream that controls their power. This design choice ensures that light switches can be used and the home can   
+The hardware choices for the home have pivoted around a few primary concerns for us as a family: safety, sleep, noise, and independance. We have a child with extra support needs and an automated home can drastically reduce the stress and cognitive strain on us. 
+
+### Safety
+
+Perhaps to the suprise of many, safety in this context has much less to do with alarm systems and keeping out intruders; but rather, about keeping us apprised of the location of a child who occasionally elopes (wanders off). By monitoring motion in the house, monitoring exit points from the house, we can provide our child with more freedom and stress less about them leaving the house without telling us. The house uses motion sensors, door open/closed sensors, and a series of notifying automations which inform us of unexpected egress.   
+
+### Sleep
+
+For those familliar with cognitive disabilities, sleep challenges can be a symptom and/or side effect of medications. To combat sleep challenges, we use smart lights that are intense blues in the mornings and fade to soft oranges in the evenings. The changing color temperatures and intensities helps to combat the short PNW winter days and LONG PNW summer nights. Is this as effective as happy lamps and melatonin? No, but it's a tool in the tool box.
+
+### Noise
+
+Our child also deals with sensory processing challenges. Of particular note 
+
+### Independance
+
+Which a child that is not always taking in
+
+One of the main features of our smart home is that all smart lighting fixtures have a smart switch upstream that controls their power. 
 
 ```mermaid
   flowchart LR
       Line-->Switch("Smart Switch")
       Switch-->Light("Smart Light or Load")
 ```
+
+This design choice ensures that light switches can be used as normal; motion detetcion systems can turn the power to the smart lights back on when switches have been manually toggeled. 
